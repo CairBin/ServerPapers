@@ -4,11 +4,21 @@ import {Server} from 'socket.io'
 import config from './config.js'
 import {SymEncryption,Hash} from './utils/hash/index.js'
 
+//routes
+import indexRoute from './routes/indexRoute.js'
+
 const app = express()
 const httpServer = createServer(app)
 const io = new Server(httpServer,{})
-
 const symEncry = new SymEncryption(config.encryption)
+
+app.use(express.static('./views'))
+app.use('/',indexRoute)
+
+const mapper = new Map()
+config.clients.forEach((item) => {
+    mapper.set(item.name,{status:'outline',info:null})
+})
 
 io.on('connection',(sock)=>{
     console.log(sock.id)
@@ -21,7 +31,10 @@ io.on('connection',(sock)=>{
                 try{
                     var data = JSON.parse(symEncry.decode(pack,Hash.Md5(item.pwd)))
                     if(data.pwd == item.pwd){
-                        console.log(data.message)
+                        mapper.set(item.name, {
+                            status: 'online',
+                            info:data.message
+                        })
                     }
                 }
                 catch(e){
