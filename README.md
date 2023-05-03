@@ -50,3 +50,12 @@ If you want to stop the program,you can execute this command.
 pm2 stop ecosystem.config.cjs
 ```
 
+## Web Page & Client
+
+
+### Web Page
+If you want to customize a web page, you can refer to the [CairBin/ServerPapers-Web](https://github.com/CairBin/ServerPapers-Web) project or place your own HTML file in the `./views` directory.
+
+### Client
+You need to deploy the client to the terminal device you want to listen to.
+Please refer to [CairBin/ServerPapers-Client](https://github.com/CairBin/ServerPapers-Client).

@@ -63,7 +63,7 @@ io.on('connection',(sock)=>{
         console.log(sock.id, 'disconnected!')
         mapper.forEach((item) => {
             if (item.id == sock.id) {
-                item.status = 'outline'
+                item.status = 'offline'
                 mapper.set(item.name,item)
             }
         })
