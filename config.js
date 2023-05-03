@@ -1,7 +1,7 @@
 export default{
     host:{
         address:'localhost',
-        port:8248
+        port:8244
     },
     encryption:{
         algorithm:'aes-256-gcm',
