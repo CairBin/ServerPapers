@@ -182,7 +182,7 @@ builder.run();
 ### Handler
 
 
-`./src/socket/SocketInitializer.ts`中代码会自动扫描`./handler/`下所有模块文件然后自动从容器中加载，请将新的Handler放置在该目录下，并实现`ISocketHandler`接口，添加`@Handler`装饰器，并初始化`handler`属性，该属性用于依赖注入。
+`./src/socket/SocketInitializer.ts`中代码会自动扫描`./handler/`下所有模块文件然后自动从容器中加载，请将新的Handler放置在该目录下，并实现`ISocketHandler`接口，添加`@Handler`装饰器，并初始化`handlerName`属性，该属性用于依赖注入。
 
 
 
