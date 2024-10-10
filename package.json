@@ -1,0 +1,31 @@
+{
+  "name": "server_papers",
+  "version": "2.0.0",
+  "description": "ServerPapers typescript version",
+  "scripts": {
+    "start": "ts-node-dev --respawn ./src/app.ts",
+    "lint": "eslint src/**/*.ts"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/CairBin/ServerPapers",
+  "author": "Xinyi Liu(CairBin)",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.12",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.1",
+    "inversify": "^6.0.2",
+    "inversify-binding-decorators": "^4.0.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "reflect-metadata": "^0.2.2",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.5",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  }
+}
