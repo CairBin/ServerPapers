@@ -22,7 +22,6 @@ interface ClientMessage{
 }
 
 class Client{
-    username!:string;
     token!:string;
 }
 

@@ -31,7 +31,6 @@ interface HelloMessage{
 }
 
 class Client{
-    username!:string;
     token!:string;
 }
 

@@ -37,12 +37,13 @@ export default{
         certPath: '/Users/cairbin/Others/program/nodejs/sp/server/certificate/cert.pem',
     },
     clients:{   // 客户端
+        // key为用户名，用于标识客户端
         test: {
-            username:'test',    // 用户名，用于标识客户端
             token: '123456'     // 每次接受信息需要验证的口令
         }
     },
     websites:{  // web端符合条件的会加入广播组
+        // key为用户名
         web1:{
             url: 'http://localhost:8892',   // URL地址仅描述暂无实质用处
             token: '123456',                // 登陆口令

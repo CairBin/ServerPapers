@@ -10,8 +10,8 @@ export default{
         certPath: '/Users/cairbin/Others/program/nodejs/sp/server/certificate/cert.pem',
     },
     clients:{   // 客户端
+        // key为用户名，用于标识客户端
         test: {
-            username:'test',    // 用户名，用于标识客户端
             token: '123456'     // 每次接受信息需要验证的口令
         }
     },
