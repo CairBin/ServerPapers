@@ -79,9 +79,11 @@ export default class ConnectHandler implements ISocketHandler{
                     );
 
                     if(!flag){
+                        this.logger.info(`Token error`);
+                        socket.disconnect();
                         return;
                     }
-                    socket.emit("ready");
+                    socket.join('web');
                     this.logger.info(`Connected to website ${message.user}, ${socket.id}`);
 
                 
@@ -94,6 +96,7 @@ export default class ConnectHandler implements ISocketHandler{
                     
                     if(!flag){
                         this.logger.info(`Token error`);
+                        socket.disconnect();
                         return;
                     } 
                     socket.emit("ready");

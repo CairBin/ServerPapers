@@ -54,13 +54,12 @@ export default class ClientHandler implements ISocketHandler {
                 );
 
                 this.logger.debug(`${JSON.stringify(message)}`)
-                
                 if(!flag) return;
                 socket.to("web").emit("clientInfo", {
                     user:message.user,
                     data:message.data
                 });
-                this.logger.info(`data: ${message.data}`);
+                
 
             }catch(error){
                 this.logger.info(`Error processing data, ${socket.id}`);
