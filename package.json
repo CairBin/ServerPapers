@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "ServerPapers typescript version",
   "scripts": {
-    "start": "ts-node-dev --respawn ./src/app.ts",
+    "start": "ts-node-dev --respawn ./src/App.ts",
     "lint": "eslint src/**/*.ts"
   },
   "main": "index.js",
