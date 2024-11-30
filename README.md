@@ -96,6 +96,13 @@ yarn global bin
 pm2 install typescript
 ```
 
+如果安装失败，那就先安装ts-node再安装typescript（后者在某些环境下可能需要sudo权限）
+```sh
+pm2 install typescript
+pm2 install ts-node@latest
+
+```
+
 使用PM2启动项目
 
 ```sh
