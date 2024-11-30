@@ -11,6 +11,7 @@
   "author": "Xinyi Liu(CairBin)",
   "license": "MIT",
   "dependencies": {
+    "@cspotcode/source-map-support": "^0.8.1",
     "config": "^3.3.12",
     "dayjs": "^1.11.13",
     "express": "^4.21.1",

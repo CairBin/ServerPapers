@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "outDir":"build",
+        "rootDir": "./src",
         "target":"ES6",
         "module":"CommonJS",
         "sourceMap": true,
@@ -9,6 +10,8 @@
         "strict": true,
         "skipLibCheck": true,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-    }
+        "experimentalDecorators": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }
